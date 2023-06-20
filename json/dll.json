@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "label": "MOD-NAME.dll",
+  "label": "GimbalTrim.dll",
   "labelColor": "darkgreen",
-  "message": "1.3.0.29",
+  "message": "1.1.0.0",
   "color": "orange",
   "style": "plastic"
 }
