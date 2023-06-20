@@ -7,7 +7,7 @@ tags: notices,legal,mumbo,jumbo,page,kerbal,ksp,zer0Kerbal,zedK
 <!-- Notices.md v1.0.0.0
 GimbalTrim (GT)
 created: 20 Jun 2022
-updated: 
+updated: 20 Jun 2023
 
 TEMPLATE: Notices.md v1.0.3.0
 created: 13 Apr 2022
