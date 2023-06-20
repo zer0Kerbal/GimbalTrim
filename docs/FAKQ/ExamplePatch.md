@@ -7,7 +7,7 @@ tags: error,page,kerbal,ksp,zer0Kerbal,zedK
 <!-- ExamplePatch.md v1.0.0.0
 Gimbal Trim (GT)
 created: 20 Jun 2022
-updated: 
+updated: 20 Jun 2023
 
 THIS FILE: GPL-2.0 by sarbian and [zer0Kerbal](https://github.com/zer0Kerbal) -->
 
@@ -21,7 +21,7 @@ THIS FILE: GPL-2.0 by sarbian and [zer0Kerbal](https://github.com/zer0Kerbal) --
 <!-- ExamplePatch.md v1.0.0.0
 Gimbal Trim (GT)
 created: 
-updated: 
+updated: 20 Jun 2023
 
 THIS FILE: GPL-2.0 by sarbian and [zer0Kerbal](https://github.com/zer0Kerbal) -->
 
