@@ -8,7 +8,7 @@ tags: attributions,thank-you,directions,page,kerbal,ksp,zer0Kerbal,zedK
 Attributions.md v1.0.0.0
 GimbalTrim (GT)
 created: 20 Jun 2022
-updated: 
+updated: 20 Jun 2023
 
 TEMPLATE: Attributions.md v1.0.9.0
 created: 01 Feb 2022
