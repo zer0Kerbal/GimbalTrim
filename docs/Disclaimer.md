@@ -7,7 +7,7 @@ tags: disclaimer,questions,page,kerbal,ksp,zer0Kerbal,zedK
 <!-- Disclaimer.md v1.0.0.0
 GimbalTrim (GT)
 created: 20 Jun 2022
-updated: 
+updated: 20 Jun 2023
 
 TEMPLATE: Disclaimer.md v1.0.2.0
 created: 01 Apr 2022
