@@ -18,6 +18,10 @@
 
 * Fixing the engine rotation was actually not a good idea
 
+* Issues
+  * closes #13 - 1.1.1.0-archival `<ARCHIVAL>`
+  * closes #8 - Archival Releases
+
 ---
 
 ## Version 1.1.0.0-release - `<Archival>` release
@@ -35,6 +39,10 @@
   * This is more realistic that the default mode but lower your control range when you trim.
 * AVC file
 
+* Issues
+  * closes #12 - 1.1.0.0-archival `<ARCHIVAL>`
+  * updates #8 - Archival Releases
+
 ---
 
 ## Version 1.0.0.0-release - `<Archival>` release
@@ -43,5 +51,13 @@
   * Jul 2, 2016, 7:51:30 PM
   * for Kerbal Space Program 1.1.3
   * by [sarbian](https://github.com/sarbian)
+  * archival release by [zer0Kerbal](https://github.com/zer0Kerbal)
+
+* no change log
+* initial release
+
+* Issues
+  * closes #11 - 1.0.0.0-archival `<ARCHIVAL>`
+  * updates #8 - Archival Releases
 
 ---
