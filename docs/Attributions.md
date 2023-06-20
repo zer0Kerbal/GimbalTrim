@@ -6,7 +6,7 @@ tags: attributions,thank-you,directions,page,kerbal,ksp,zer0Kerbal,zedK
 ---
 <!--
 Attributions.md v1.0.0.0
-GimbalTrim (GT)
+GimbalTrim (TRIM)
 created: 20 Jun 2022
 updated: 20 Jun 2023
 
@@ -18,7 +18,7 @@ THIS FILE: CC BY-ND 4.0 by zer0Kerbal -->
 <script src="https://kit.fontawesome.com/0ea5493613.js" crossorigin="anonymous"></script>
 <i class="fa fa-gear fa-spin fa-3x" style="color: firebrick"></i>
 
-## [GimbalTrim (GT)][mod]
+## [GimbalTrim (TRIM)][mod]
 
 [Home](./index.md)
 
@@ -27,7 +27,7 @@ THIS FILE: CC BY-ND 4.0 by zer0Kerbal -->
 ### Credits
 
 <ul>
-  <li><a href="https://forum.kerbalspaceprogram.com/index.php?/profile/57146-*/"><img alt="sarbian" src="https://kerbal-forum-uploads.s3.us-west-2.amazonaws.com/monthly_11_2015/SARB_256.png.e1dd6c3151697771c487b0eadb607496.thumb.png.d0a1db9555610e1208df16a364c0cdee.png" width="50px" height="50px" > sarbian</a> for creating the <a href="https://github.com/zer0Kerbal/GimbalTrim" alt="GimbalTrim (GT)"> the Gimbal Trim plugin!</a></li>
+  <li><a href="https://forum.kerbalspaceprogram.com/index.php?/profile/57146-*/"><img alt="sarbian" src="https://kerbal-forum-uploads.s3.us-west-2.amazonaws.com/monthly_11_2015/SARB_256.png.e1dd6c3151697771c487b0eadb607496.thumb.png.d0a1db9555610e1208df16a364c0cdee.png" width="50px" height="50px" > sarbian</a> for creating the <a href="https://github.com/zer0Kerbal/GimbalTrim" alt="GimbalTrim (TRIM)"> the Gimbal Trim plugin!</a></li>
   <li><b><small>Thanks to everyone who gave feedback! It's very important for me and highly appreciated.</small></b></li>
 </ul>
 
@@ -81,4 +81,4 @@ THIS FILE: CC BY-ND 4.0 by zer0Kerbal -->
 THIS FILE: CC BY-ND 4.0 by zer0Kerbal
   used with express permission from zer0Kerbal
 
-[mod]: https://www.curseforge.com/kerbal/ksp-mods/GimbalTrim "GimbalTrim (GT)"
+[mod]: https://www.curseforge.com/kerbal/ksp-mods/GimbalTrim "GimbalTrim (TRIM)"
