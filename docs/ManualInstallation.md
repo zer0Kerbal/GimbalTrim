@@ -5,7 +5,7 @@ description: the flat-pack Kiea instructions, written in Kerbalese, unusally pre
 tags: installation,directions,page,kerbal,ksp,zer0Kerbal,zedK
 ---
 <!-- ManualInstallation.md v1.0.0.0
-GimbalTrim (GT)
+GimbalTrim (TRIM)
 created: 20 Jun 2022
 updated: 20 Jun 2023
 
@@ -14,7 +14,7 @@ created: 01 Feb 2022
 updated: 26 Apr 2023
 
 based upon work by Lisias -->
-## [GimbalTrim (GT)][mod]
+## [GimbalTrim (TRIM)][mod]
 
 [Home](./index.md)
 
@@ -86,4 +86,4 @@ To install, place the `GameData` folder inside your Kerbal Space Program folder:
 THIS FILE: CC BY-ND 4.0 by [zer0Kerbal](https://github.com/zer0Kerbal)
   used with express permission from zer0Kerbal
 
-[mod]: https://www.curseforge.com/kerbal/ksp-mods/GimbalTrim "GimbalTrim (GT)"
+[mod]: https://www.curseforge.com/kerbal/ksp-mods/GimbalTrim "GimbalTrim (TRIM)"
