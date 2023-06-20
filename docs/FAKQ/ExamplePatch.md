@@ -1,6 +1,6 @@
 ---
 permalink: /ExamplePatch.html
-title: GimbalTrim (GT) - Example ModularManagement (MM) Patch
+title: GimbalTrim (TRIM) - Example ModularManagement (MM) Patch
 description: an error page, the sequel
 tags: error,page,kerbal,ksp,zer0Kerbal,zedK
 ---
@@ -11,7 +11,7 @@ updated: 20 Jun 2023
 
 THIS FILE: GPL-2.0 by sarbian and [zer0Kerbal](https://github.com/zer0Kerbal) -->
 
-## [GimbalTrim (GT)][mod]
+## [GimbalTrim (TRIM)][mod]
 
 ### Sample Patch
 
@@ -50,4 +50,4 @@ MODULE
 THIS FILE: CC BY-ND 4.0 by [zer0Kerbal](https://github.com/zer0Kerbal)
   used with express permission from zer0Kerbal
 
-[mod]: https://www.curseforge.com/kerbal/ksp-mods/GimbalTrim "GimbalTrim (GT)"
+[mod]: https://www.curseforge.com/kerbal/ksp-mods/GimbalTrim "GimbalTrim (TRIM)"
