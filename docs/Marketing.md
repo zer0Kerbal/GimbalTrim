@@ -40,4 +40,4 @@ this file:
 THIS FILE: CC BY-ND 4.0 by [zer0Kerbal](https://github.com/zer0Kerbal)
   used with express permission from zer0Kerbal
 
-[mod]: https://www.curseforge.com/kerbal/ksp-mods/GimbalTrim "GimbalTrim (GT)"
+[mod]: https://www.curseforge.com/kerbal/ksp-mods/GimbalTrim "GimbalTrim (TRIM)"
