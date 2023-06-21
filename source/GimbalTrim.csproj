@@ -42,21 +42,21 @@
   </PropertyGroup>
   <PropertyGroup>
     <SignAssembly>false</SignAssembly>
-    <TransformOnBuild>true</TransformOnBuild>
+    <TransformOnBuild>false</TransformOnBuild>
     <OverwriteReadOnlyOutputFiles>true</OverwriteReadOnlyOutputFiles>
     <TransformOutOfDateOnly>false</TransformOutOfDateOnly>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="$(K112)Assembly-CSharp.dll">
+    <Reference Include="$(K17)Assembly-CSharp.dll">
       <Private>False</Private>
     </Reference>
-    <Reference Include="$(K112)Assembly-CSharp-firstpass.dll">
+    <Reference Include="$(K17)Assembly-CSharp-firstpass.dll">
       <Private>False</Private>
     </Reference>
-    <Reference Include="$(K112)UnityEngine*.dll">
+    <Reference Include="$(K17)UnityEngine*.dll">
       <Private>False</Private>
     </Reference>
-    <Reference Include="$(K112)UnityEngine.UI.dll">
+    <Reference Include="$(K17)UnityEngine.UI.dll">
       <Private>False</Private>
     </Reference>
     <Reference Include="System.Core" />
@@ -85,17 +85,17 @@
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSHARP.Targets" />
-    <Import Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v16.0\TextTemplating\Microsoft.TextTemplating.targets" />
-  <!-- <Import Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v17.0\TextTemplating\Microsoft.TextTemplating.targets" /> -->
+    <Import Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v17.0\TextTemplating\Microsoft.TextTemplating.targets" />
+    <!-- <Import Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v16.0\TextTemplating\Microsoft.TextTemplating.targets" /> -->
   <PropertyGroup>
     <PreBuildEvent>"$(DevEnvDir)\TextTransform.exe" "$(ProjectDir)Properties\Version.tt" 
     </PreBuildEvent>
   </PropertyGroup>
   <PropertyGroup>
     <PostBuildEvent>
-set K112=$(K112)
-IF "%25K112%25"=="" (
-	ECHO Configuration error - K112 not specified in project.
+set K17=$(K17)
+IF "%25K17%25"=="" (
+	ECHO Configuration error - K17 not specified in project.
 	ECHO Either set K100 environment variable
 	PAUSE
 	rem GOTO DONE
