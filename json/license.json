@@ -2,9 +2,9 @@
  "schemaVersion": 1,
  "label": "License",
  "labelColor": "white",
- "message": "Expat-MIT",
- "color": "3DA639",
- "logoColor": "3DA639",
- "namedLogo": "OpenSourceInitiative",
+ "message": "GPL-2.0+ARR",
+ "color": "A42E2B",
+ "logoColor": "A42E2B",
+ "namedLogo": "gnu",
  "style": "plastic"
 }
