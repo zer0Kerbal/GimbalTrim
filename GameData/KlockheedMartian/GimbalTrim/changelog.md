@@ -32,28 +32,32 @@
 
 #### Code 1.1.99.1
 
-* [GimbalTrim.dll] v1.1.99.3 --> v1.1.99.0
-* Update
+* [GimbalTrim.dll] v1.1.99.3 --> v1.1.99.7
+* Localize code
   * .csproj
   * .sln
   * Version.tt
 * Lint
 * Recompile
-  * Kerbal Space Program 1.12.5
   * .NET 3.5
   * C# 5.0
+  * closes #32 - Code Localization
 
 #### Localization 1.1.99.1
 
 * Create
   * Localization/
-    * <en-us.cfg>
+    * <en-us.cfg> v1.0.0.0
     * [readme.md] v2.1.2.0
     * [quickstart.md] v1.0.1.1
+* Add
+  * Translation guides
+    * [readme-ru.md] v1.0.1.0
+    * [quickstart-ru.md] v1.0.0.0
+    * Спасибо [evanisrael](https://github/evanisrael)
   * closes #15 - English <en-us.cfg>
   * updates #14 - Localization - Master
   * closes #9 - Create Localization directory and contents
-  * closes #32 - Code Localization
 
 ### Status 1.1.99.1
 
