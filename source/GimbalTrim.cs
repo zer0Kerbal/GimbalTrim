@@ -25,6 +25,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
+using KSP.Localization;
 
 namespace GimbalTrim
 {
@@ -67,7 +68,11 @@ namespace GimbalTrim
         [KSPField]
         public float trimRangeYN = -1f;
 
-        [KSPField(isPersistant = true, guiActive = true, guiActiveEditor = true, guiName = "X-Trim"),
+        //[KSPField(isPersistant = true, guiActive = true, guiActiveEditor = true, guiName = "#TRIM-gui-name", groupName = "GimbalTrim", //Plugged In?
+        //    groupDisplayName = "GimbalTrim v " + Version.SText, groupStartCollapsed = true)]
+        //public bool _isActive = false;
+
+        [KSPField(isPersistant = true, guiActive = true, guiActiveEditor = true, guiName = "#TRIM-100"),		// #TRIM-100 = X-Trim
          UI_FloatRange(minValue = -14f, maxValue = 14f, stepIncrement = 0.5f)]
         public float trimX = 0;
 
@@ -77,7 +82,7 @@ namespace GimbalTrim
             set { trimX = Mathf.Clamp(value, -trimRangeXN, trimRangeXP); }
         }
 
-        [KSPField(isPersistant = true, guiActive = true, guiActiveEditor = true, guiName = "Y-Trim"),
+        [KSPField(isPersistant = true, guiActive = true, guiActiveEditor = true, guiName = "#TRIM-101"),		// #TRIM-101 = Y-Trim
          UI_FloatRange(minValue = -14f, maxValue = 14f, stepIncrement = 0.5f)]
         public float trimY = 0;
 
@@ -87,72 +92,55 @@ namespace GimbalTrim
             set { trimY = Mathf.Clamp(value, -trimRangeYN, trimRangeYP); }
         }
 
-        [KSPField(isPersistant = true, guiActive = true, guiActiveEditor = true, guiName = "Trim"),
-         UI_Toggle(disabledText = "Disabled", enabledText = "Enabled")]
+        [KSPField(isPersistant = true, guiActive = true, guiActiveEditor = true, guiName = "#TRIM-102"),		// #TRIM-102 = Trim
+         UI_Toggle(disabledText = "#TRIM-103", enabledText = "#TRIM-104")]		// #TRIM-103 = Disabled		// #TRIM-104 = Enabled
         public bool enableTrim = true;
 
-        [KSPField(isPersistant = true, guiActive = true, guiActiveEditor = true, guiName = "Method"),
-         UI_Toggle(disabledText = "Precise", enabledText = "Smooth")]
+        [KSPField(isPersistant = true, guiActive = true, guiActiveEditor = true, guiName = "#TRIM-105"),		// #TRIM-105 = Method
+         UI_Toggle(disabledText = "#TRIM-107", enabledText = "#TRIM-106")]		// #TRIM-106 = Smooth		// #TRIM-107 = Precise
         public bool useTrimResponseSpeed = false;
 
-        [KSPField(isPersistant = true, guiActive = true, guiActiveEditor = true, guiName = "Speed"),
+        [KSPField(isPersistant = true, guiActive = true, guiActiveEditor = true, guiName = "#TRIM-108"),		// #TRIM-108 = Speed
          UI_FloatRange(minValue = 1f, maxValue = 100.0f, stepIncrement = 1f)]
         public float trimResponseSpeed = 60;
 
-        [KSPAction("X Trim +")]
+        [KSPAction("#TRIM-110")]		// #TRIM-110 = X Trim +
         public void plusTrimX(KSPActionParam param)
-        {
-            TrimX += 1f;
-        }
+        { TrimX += 1f; }
 
-        [KSPAction("X Trim -")]
+        [KSPAction("#TRIM-111")]		// #TRIM-111 = X Trim -
         public void minusTrim(KSPActionParam param)
-        {
-            TrimX -= 1f;
-        }
+        { TrimX -= 1f; }
 
-        [KSPAction("X Trim +5")]
+        [KSPAction("#TRIM-112")]		// #TRIM-112 = X Trim +5
         public void plus5Trim(KSPActionParam param)
-        {
-            TrimX += 5f;
-        }
+        { TrimX += 5f; }
 
-        [KSPAction("X Trim -5")]
-        public void minus5Trim(KSPActionParam param)
-        {
-            TrimX -= 5f;
-        }
+        [KSPAction("#TRIM-113")]		// #TRIM-113 = X Trim -5
+        public void minus5Trim(KSPActionParam param) 
+        { TrimX -= 5f; }
 
-        [KSPAction("Y Trim +")]
+        [KSPAction("#TRIM-114")]		// #TRIM-114 = Y Trim +
         public void plusTrimY(KSPActionParam param)
-        {
-            TrimY += 1f;
-        }
+        { TrimY += 1f; }
 
-        [KSPAction("Y Trim -")]
+        [KSPAction("#TRIM-115")]		// #TRIM-115 = Y Trim -
         public void minusTrimY(KSPActionParam param)
-        {
-            TrimY -= 1f;
-        }
+        { TrimY -= 1f; }
 
-        [KSPAction("Y Trim +5")]
+        [KSPAction("#TRIM-116")]		// #TRIM-116 = Y Trim +5
         public void plus5TrimY(KSPActionParam param)
-        {
-            TrimY += 5f;
-        }
+        { TrimY += 5f; }
 
-        [KSPAction("Y Trim -5")]
+        [KSPAction("#TRIM-117")]		// #TRIM-117 = Y Trim -5
         public void minus5TrimY(KSPActionParam param)
-        {
-            TrimY -= 5f;
-        }
+        { TrimY -= 5f; }
 
-        [KSPAction("Toggle Trim")]
+        [KSPAction("#TRIM-118")]		// #TRIM-118 = Toggle Trim
         public void toggleTrim(KSPActionParam param)
-        {
-            enableTrim = !enableTrim;
-        }
+        { enableTrim = !enableTrim; }
 
+        /// <summary>InitRange</summary>
         public void InitRange()
         {
             if (limitToGimbalRange)
@@ -186,6 +174,7 @@ namespace GimbalTrim
             //print("Ranges = " + trimRangeXN.ToString("F1") + " " + trimRangeXP.ToString("F1") + " " + trimRangeYN.ToString("F1") + " " + trimRangeYP.ToString("F1"));
         }
 
+        /// <summary>OnStart</summary>
         public override void OnStart(StartState state)
         {
             base.OnStart(state);
@@ -194,7 +183,7 @@ namespace GimbalTrim
 
             if (gimbal == null)
             {
-                print("Could not find a ModuleGimbal with gimbalTransformName = " + gimbalTransformName);
+                print(Localizer.Format("#TRIM-109") + gimbalTransformName);		// #TRIM-109 = Could not find a ModuleGimbal with gimbalTransformName = 
                 return;
             }
 
@@ -223,6 +212,7 @@ namespace GimbalTrim
             trimYRange.stepIncrement = trimRangeXN + trimRangeYN >= 10f ? 1f : trimRangeXN + trimRangeYN >= 5f ? 0.5f : 0.25f;
         }
 
+        /// <summary>Update</summary>
         public void Update()
         {
             if (gimbal == null)
@@ -240,6 +230,7 @@ namespace GimbalTrim
             }
         }
 
+        /// <summary>FixedUpdate</summary>
         public void FixedUpdate()
         {
             if (HighLogic.LoadedSceneIsEditor || gimbal == null)
