@@ -26,6 +26,7 @@ CC BY-ND 4.0 by zer0Kerbal -->
   * Jul 3, 2016, 10:20:59 PM
   * for Kerbal Space Program 1.1.3
   * by [sarbian](https://github.com/sarbian)
+  * archival release by [zer0Kerbal](https://github.com/zer0Kerbal)
 
 * Fixing the engine rotation was actually not a good idea
 
