@@ -41,6 +41,7 @@ CC BY-ND 4.0 by zer0Kerbal -->
   * Jul 3, 2016, 5:40:14 PM
   * for Kerbal Space Program 1.1.3
   * by [sarbian](https://github.com/sarbian)
+  * archival release by [zer0Kerbal](https://github.com/zer0Kerbal)
 
 * Fix the typo in useTrimResponseSpeed
 * Fix the handling of engine in front of the CoM or rotated
