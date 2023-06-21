@@ -9,6 +9,93 @@
 | curseforge | (https://www.curseforge.com/kerbal/ksp-mods/GimbalTrim)           |
 | ckan       | GimbalTrim                                                        |
 
+## Version 1.1.99.0-adoption - `<Thank you sarbian>` release
+
+* Released
+  * 06 Aug 2022
+  * for Kerbal Space Program 1.12.3
+  * by [zer0Kerbal](https://github.com/zer0Kerbal)
+
+* 📌 Pinned
+  * Dependencies:
+    * [ModularManagement (MM)](https://curseforge.com/kerbal/ksp-mods/ModularManagement) or [Module Manager](https://forum.kerbalspaceprogram.com/index.php?/topic/50533-*/)
+
+### Adoption by [zer0Kerbal](https://github.com/zer0Kerbal)
+
+### Change Summary 1.1.99.0
+
+* [GimbalTrim.dll] v1.1.1.0 --> v1.1.99.3
+* Recompile
+  * Kerbal Space Program 1.12.3
+  * .NET 4.5.2
+  * C# 7.0
+
+### Changes 1.1.99.0
+
+#### Archival Releases 1.1.99.0
+
+* Archival Releases
+  * 1.1.1.0-release - `<Archival Release>`
+  * 1.1.0.0-release - `<Archival Release>`
+  * 1.0.0.0-release - `<Archival Release>`
+* closes #11 - 1.0.0.0-archival `<ARCHIVAL>`
+* closes #12 - 1.1.0.0-archival `<ARCHIVAL>`
+* closes #13 - 1.1.1.0-archival `<ARCHIVAL>`
+* closes #8 - Archival Releases
+
+#### Code 1.1.99.0
+
+* [GimbalTrim.dll] v1.1.1.0 --> v1.1.99.3
+* Create
+  * .csproj
+  * .sln
+  * Version.tt
+* Lint
+* Recompile
+  * Kerbal Space Program 1.12.3
+  * .NET 4.5.2
+  * C# 7.0
+
+#### Documentation 1.1.99.0
+
+* Create
+  * GitHub Pages
+    * docs/
+      * [`_config.yml`] v1.0.0.0
+      * [404.md] v1.0.0.0
+      * [Attribution.md] v1.0.0.0
+      * [LegalMumboJumbo.md] v1.0.0.0
+      * [Localizations.md] v1.0.0.0
+      * [ManualInstallation.md] v1.0.0.0
+      * [Marketing.md] v1.0.0.0
+      * [Notices.md] v1.0.0.0
+      * [Disclaimer.md] v1.0.0.0
+      * [FAKQ.md] v1.0.0.0
+      * [Why.md] v1.0.0.0
+  * HeroLogo.png
+    * copy/convert to HeroLogo.jpg
+    * All Rights Reserved
+* closes #7 - Create HeroLogo.png
+* closes #6 - Create GitHub Pages
+
+#### Update 1.1.99.0
+
+* Update
+  * Updated License
+    * to: GPL-2.0+ARR
+    * was: Expat-MIT
+* closes #10 - Update License
+
+### Status 1.1.99.0
+
+* Issues
+  * closes #2 - Gimbal Trim (TRIM) 1.1.99.0-adoption `<Thank you sarbian>` edition
+  * closes #3 - 1.1.99.0 Create Legal Mumbo Jumbo
+  * closes #4 - 1.1.99.0 Create Documentation
+  * closes #5 - 1.1.99.0 Create Social Media Presence
+
+---
+
 ## Version 1.1.1.0-release - `<Archival>` release
 
 * Released
@@ -17,6 +104,7 @@
   * by [sarbian](https://github.com/sarbian)
   * archival release by [zer0Kerbal](https://github.com/zer0Kerbal)
 
+* [GimbalTrim.dll] v1.1.0.0 --> v1.1.1.0
 * Fixing the engine rotation was actually not a good idea
 
 * Issues
@@ -33,6 +121,7 @@
   * by [sarbian](https://github.com/sarbian)
   * archival release by [zer0Kerbal](https://github.com/zer0Kerbal)
 
+* [GimbalTrim.dll] v1.0.0.0 --> v1.1.0.0
 * Fix the typo in useTrimResponseSpeed
 * Fix the handling of engine in front of the CoM or rotated
 * Add the limitToGimbalRange option.
@@ -55,6 +144,7 @@
   * by [sarbian](https://github.com/sarbian)
   * archival release by [zer0Kerbal](https://github.com/zer0Kerbal)
 
+* [GimbalTrim.dll] v1.0.0.0
 * no change log
 * initial release
 
