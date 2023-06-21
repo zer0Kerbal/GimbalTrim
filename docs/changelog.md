@@ -35,6 +35,7 @@ CC BY-ND 4.0 by zer0Kerbal -->
 
 ### Change Summary 1.1.99.0
 
+* forgot to release in 2022
 * [GimbalTrim.dll] v1.1.1.0 --> v1.1.99.3
 * Recompile
   * Kerbal Space Program 1.12.3
