@@ -35,8 +35,6 @@ adopted with *express* permission and brought to you by *KerbSimpleCo*
 >* AutoTriming (like my old mod did).
 >* Mode that keeps the trimming inside the gimbal default limits
 
- <img src="https://www.sarbian.com/sarbian/GimbalTrim.png" alt="GimbalTrim.png" style="zoom:50%;" />
-
 ### See more
 
 >* the latest version of this readme is always found on [GitHub][GITHUB:url]
