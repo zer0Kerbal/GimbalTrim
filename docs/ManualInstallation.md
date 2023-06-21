@@ -28,47 +28,49 @@ You should be all good! (check for latest version on CurseForge)
 
 ### If Downloaded from CurseForge/OverWolf manual download
 
-To install, place the `GimbalTrim` folder inside your Kerbal Space Program's GameData folder:
+To install, place the `KlockheedMartian` folder inside your Kerbal Space Program's GameData folder:
 
 * **REMOVE ANY OLD VERSIONS OF THE PRODUCT BEFORE INSTALLING**
-  * Delete `<KSP_ROOT>/GameData/GimbalTrim`
-* Extract the package's `GimbalTrim/` folder into your KSP's GameData folder as follows:
-  * `<PACKAGE>/GimbalTrim` --> `<KSP_ROOT>/GameData`
+  * Delete `<KSP_ROOT>/GameData/KlockheedMartian/GimbalTrim`
+* Extract the package's `KlockheedMartian/` folder into your KSP's GameData folder as follows:
+  * `<PACKAGE>/KlockheedMartian` --> `<KSP_ROOT>/GameData`
     * Overwrite any preexisting folder/file(s).
-  * you should end up with `<KSP_ROOT>/GameData/GimbalTrim`
+  * you should end up with `<KSP_ROOT>/GameData/KlockheedMartian/GimbalTrim`
 
 ### If Downloaded from SpaceDock / GitHub / other
 
 To install, place the `GameData` folder inside your Kerbal Space Program folder:
 
 * **REMOVE ANY OLD VERSIONS OF THE PRODUCT BEFORE INSTALLING**
-  * Delete `<KSP_ROOT>/GameData/GimbalTrim`
+  * Delete `<KSP_ROOT>/GameData/KlockheedMartian/GimbalTrim`
 * Extract the package's `GameData` folder into your KSP's root folder as follows:
   * `<PACKAGE>/GameData` --> `<KSP_ROOT>`
     * Overwrite any preexisting folder/file(s).
-  * you should end up with `<KSP_ROOT>/GameData/GimbalTrim`
+  * you should end up with `<KSP_ROOT>/GameData/KlockheedMartian/GimbalTrim`
 
 ## The following file layout must be present after installation
 
 ```markdown
 <KSP_ROOT>
   + [GameData]
-    + [GimbalTrim]
-      + [Compatibility]
-        ...
-      + [Config]
-        ...
-      + [Localization]
-        ...
-      + [Plugins]
-        ...
-      * #.#.#.#.htm
-      * Attributions.htm
-      * changelog.md
-      * GimbalTrim.version
-      * GPL-2.0+ARR.txt
-      * ManualInstallation.htm
-      * readme.htm
+    + [KlockheedMartian]
+      + [GimbalTrim]
+        + [Compatibility]
+          ...
+        + [Config]
+          ...
+        + [Localization]
+          ...
+        + [Plugins]
+          ...
+        * #.#.#.#.htm
+        * Attributions.htm
+        * changelog.md
+        * GimbalTrim.version
+        * GPL-2.0+ARR.txt
+        * ManualInstallation.htm
+        * readme.htm
+      ...
     ...
     * [ModularManagement][MM] or [Module Manager][omm]
     * ModuleManager.ConfigCache
