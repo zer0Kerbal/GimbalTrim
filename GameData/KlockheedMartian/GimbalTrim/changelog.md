@@ -9,6 +9,60 @@
 | curseforge | (https://www.curseforge.com/kerbal/ksp-mods/GimbalTrim)           |
 | ckan       | GimbalTrim                                                        |
 
+## Version 1.1.99.1-prerelease - `<Thank you sarbian>` release
+
+* Released
+  * 20 Jun 2023
+  * for Kerbal Space Program 1.12.5
+  * by [zer0Kerbal](https://github.com/zer0Kerbal)
+
+* 📌 Pinned
+  * Dependencies:
+    * [ModularManagement (MM)](https://curseforge.com/kerbal/ksp-mods/ModularManagement) or [Module Manager](https://forum.kerbalspaceprogram.com/index.php?/topic/50533-*/)
+
+## Change Summary 1.1.99.1
+
+* [GimbalTrim.dll] v1.1.99.3 --> v1.1.99.
+* Recompile
+  * Kerbal Space Program 1.12.5
+  * .NET 3.5
+  * C# 5.0
+
+### Changes 1.1.99.1
+
+#### Code 1.1.99.1
+
+* [GimbalTrim.dll] v1.1.99.3 --> v1.1.99.0
+* Update
+  * .csproj
+  * .sln
+  * Version.tt
+* Lint
+* Recompile
+  * Kerbal Space Program 1.12.5
+  * .NET 3.5
+  * C# 5.0
+
+#### Localization 1.1.99.1
+
+* Create
+  * Localization/
+    * <en-us.cfg>
+    * [readme.md] v2.1.2.0
+    * [quickstart.md] v1.0.1.1
+  * closes #15 - English <en-us.cfg>
+  * updates #14 - Localization - Master
+  * closes #9 - Create Localization directory and contents
+  * closes #32 - Code Localization
+
+### Status 1.1.99.1
+
+* Issues
+  * closes #39 - Gimbal Trim (TRIM) 1.1.99.1-prerelease `<Thank you sarbian>` edition
+  * closes #40 - 1.1.99.1 Additional Tasks
+
+---
+
 ## Version 1.1.99.0-adoption - `<Thank you sarbian>` release
 
 * Released
