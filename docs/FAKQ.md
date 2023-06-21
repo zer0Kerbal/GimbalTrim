@@ -19,15 +19,6 @@ updated: 30 Apr 2023
 
 ## Frequently Asked Kerbal Questions **FAKQ** by [`zeroKerbal`][zedk]
 
-### Q: How do I Nyan?
-
-> by doing the following:
->
->* You must be over 9000m
->* under 10km with altitude
->* you must fly fairly level
->* your speed must be over 500m/s.
-
 ### Q: WHY? JUST WHY?
 
 >Because.
