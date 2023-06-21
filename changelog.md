@@ -45,7 +45,11 @@
 
 #### Localization 1.1.99.1
 
-
+* Create
+  * Localization/
+    * <en-us.cfg>
+    * [readme.md] v2.1.2.0
+    * [quickstart.md] v1.0.1.1
   * closes #15 - English <en-us.cfg>
   * updates #14 - Localization - Master
   * closes #9 - Create Localization directory and contents
