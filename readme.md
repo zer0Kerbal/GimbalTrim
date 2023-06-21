@@ -20,8 +20,6 @@ For when you don't really want to go that way. This is a library plugin that add
 
 ## By [`zer0Kerbal`][zedk], originally by [`sarbian`][auth-link]
 
-adopted with *express* permission and brought to you by *KerbSimpleCo*
-
 <img src="https://raw.githubusercontent.com/zer0Kerbal/GimbalTrim/master/img/HeroLogo.png" alt="GimbalTrim Hero" width="50%" height="50%">
 
 ### Preamble by [`sarbian`][auth-link]
