@@ -9,11 +9,11 @@
     <NoStandardLibraries>false</NoStandardLibraries>
     <AssemblyName>GimbalTrim</AssemblyName>
     <RootNamespace>GimbalTrim</RootNamespace>
-    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
     <LangVersion>latest</LangVersion>
-    <TargetFrameworkProfile />
+    <NoStandardLibraries>false</NoStandardLibraries>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -26,53 +26,45 @@
     <ConsolePause>false</ConsolePause>
     <Prefer32Bit>false</Prefer32Bit>
     <PlatformTarget>anycpu</PlatformTarget>
+		<DocumentationFile>..\..\docs\Code\Code.xml</DocumentationFile>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU'">
     <DebugType>embedded</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>..\GameData\KlockheedMartian\GimbalTrim\Plugins\</OutputPath>
     <DefineConstants>TRACE</DefineConstants>
-    <DebugSymbols>true</DebugSymbols>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <Prefer32Bit>false</Prefer32Bit>
     <PlatformTarget>anycpu</PlatformTarget>
     <ConsolePause>false</ConsolePause>
-    <DocumentationFile>..\docs\Code\GimbalTrim.xml</DocumentationFile>
+		<DocumentationFile>..\..\docs\Code\Code.xml</DocumentationFile>
   </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'AnyCPU|AnyCPU'">
-    <DebugSymbols>true</DebugSymbols>
-    <OutputPath>bin\AnyCPU\</OutputPath>
-    <DefineConstants>TRACE</DefineConstants>
-    <DocumentationFile>..\docs\Code\GimbalTrim.xml</DocumentationFile>
-    <Optimize>true</Optimize>
-    <DebugType>embedded</DebugType>
-    <PlatformTarget>AnyCPU</PlatformTarget>
-    <LangVersion>latest</LangVersion>
-    <ErrorReport>prompt</ErrorReport>
+  <PropertyGroup>
+    <SignAssembly>false</SignAssembly>
+    <TransformOnBuild>true</TransformOnBuild>
+    <OverwriteReadOnlyOutputFiles>true</OverwriteReadOnlyOutputFiles>
+    <TransformOutOfDateOnly>false</TransformOutOfDateOnly>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="K:\112\KSP_x64_Data\Managed\Assembly-CSharp.dll">
+    <Reference Include="$(K112)Assembly-CSharp.dll">
       <Private>False</Private>
     </Reference>
-    <Reference Include="K:\112\KSP_x64_Data\Managed\Assembly-CSharp-firstpass.dll">
+    <Reference Include="$(K112)Assembly-CSharp-firstpass.dll">
       <Private>False</Private>
     </Reference>
-    <Reference Include="K:\112\KSP_x64_Data\Managed\UnityEngine*.dll">
+    <Reference Include="$(K112)UnityEngine*.dll">
       <Private>False</Private>
     </Reference>
-    <Reference Include="K:\112\KSP_x64_Data\Managed\UnityEngine.UI.dll">
+    <Reference Include="$(K112)UnityEngine.UI.dll">
       <Private>False</Private>
     </Reference>
-    <!-- <Reference Include="$(K19)\GameData\999_Scale_Redist.dll">
-      <Private>False</Private>
-    </Reference> -->
-    <Reference Include="System" />
     <Reference Include="System.Core" />
-    <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="System.Data" />
+    <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Xml" />
+    <Reference Include="System" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="GimbalTrim.cs" />
@@ -93,34 +85,36 @@
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSHARP.Targets" />
-  <Import Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v17.0\TextTemplating\Microsoft.TextTemplating.targets" />
+    <Import Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v16.0\TextTemplating\Microsoft.TextTemplating.targets" />
+  <!-- <Import Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v17.0\TextTemplating\Microsoft.TextTemplating.targets" /> -->
   <PropertyGroup>
     <PreBuildEvent>"$(DevEnvDir)\TextTransform.exe" "$(ProjectDir)Properties\Version.tt" 
     </PreBuildEvent>
   </PropertyGroup>
   <PropertyGroup>
     <PostBuildEvent>
-set K112=K:\112
+set K112=$(K112)
 IF "%25K112%25"=="" (
 	ECHO Configuration error - K112 not specified in project.
 	ECHO Either set K100 environment variable
 	PAUSE
 	rem GOTO DONE
 )
-start /D $(ProjectDir)..\  /WAIT _deploy.bat
-if $(ConfigurationName) == Release start /D $(ProjectDir)..\   /WAIT _buildRelease.bat
+del $(TargetDir)\*.pdb
+start /D $(SolutionDir)..\ /WAIT _addonDeploy.bat
+if $(ConfigurationName) == Release start /D $(SolutionDir)..\  /WAIT _addonRelease.bat
 del $(TargetDir)\*.tmp
 :DONE
-  </PostBuildEvent>
-  </PropertyGroup>
-  <ProjectExtensions>
-    <MonoDevelop>
-      <Properties>
-        <Policies>
-          <TextStylePolicy TabWidth="4" IndentWidth="4" RemoveTrailingWhitespace="True" NoTabsAfterNonTabs="False" EolMarker="Native" FileWidth="132" TabsToSpaces="False" scope="text/plain" />
-        </Policies>
-      </Properties>
-    </MonoDevelop>
-    <VisualStudio AllowExistingFolder="true" />
-  </ProjectExtensions>
+	</PostBuildEvent>
+	</PropertyGroup>
+	<ProjectExtensions>
+		<MonoDevelop>
+			<Properties>
+				<Policies>
+					<TextStylePolicy TabWidth="4" IndentWidth="4" RemoveTrailingWhitespace="True" NoTabsAfterNonTabs="False" EolMarker="Native" FileWidth="132" TabsToSpaces="False" scope="text/plain" />
+				</Policies>
+			</Properties>
+		</MonoDevelop>
+		<VisualStudio AllowExistingFolder="true" />
+	</ProjectExtensions>
 </Project>
